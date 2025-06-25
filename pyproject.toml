@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project2prompt"
+version = "0.1.0"
+authors = [
+  { name="Ivan Suroegin", email="ivan.suroegin@gmail.com" },
+]
+description = "A simple CLI tool to combine project files into a single Markdown file."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+project2prompt = "project2prompt.main:main"
